@@ -1,5 +1,5 @@
 const express = require('express');
-const port = 8778;
+const port = 80;
 const app = express();
 const path = require('path');
 const con = require('./middleware/mysql');
