@@ -13,7 +13,7 @@ app.use('/', require('./routes/index'));
 
 app.listen(port, (err) => {
     if (err) {
-        console.log('server is not on' + err);
+        console.log('server is still off' + err);
         return false;
     }
     console.log('server is on port:', port);
