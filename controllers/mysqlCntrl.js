@@ -3,7 +3,7 @@ const con = require('../middleware/mysql');
 module.exports.getData = (req, res) => {
     con.query('select * from users', (err, users) => {
         if (err) {
-            return res.send('error defined');
+            return res.send('bug defined in code');
         }
         else {
             return res.send(users);
