@@ -11,7 +11,7 @@ con.connect((err) => {
         console.log(err)
     }
     else {
-        console.log('mysql_Database connected successfullly');
+        console.log('mysql_Database connected successfullly!');
     }
 });
 

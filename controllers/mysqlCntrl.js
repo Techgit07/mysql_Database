@@ -3,10 +3,10 @@ const con = require('../middleware/mysql');
 module.exports.getData = (req, res) => {
     con.query('select * from users', (err, users) => {
         if (err) {
-            return res.json('error defined');
+            return res.send('error defined');
         }
         else {
-            return res.json(users);
+            return res.send(users);
         }
     })
 }
@@ -15,10 +15,10 @@ module.exports.addData = (req, res) => {
     const data = req.body;
     con.query('INsert INTO users SET ?', data, (err, result, fields) => {
         if (err) {
-            return res.json(err);
+            return res.send(err);
         }
         else {
-            return res.json(result);
+            return res.send(result);
         }
     });
 }
